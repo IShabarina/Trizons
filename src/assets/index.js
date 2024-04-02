@@ -24,6 +24,8 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import logoTZ from "./logoTZ.svg";
+import electroManTZ from "./electroManTZ.png";
+import electroManTZblack from "./electroManTZblack.png";
 
 export {
   airbnb,
@@ -52,4 +54,6 @@ export {
   people02,
   people03,
   logoTZ,
+  electroManTZ,
+  electroManTZblack,
 };
