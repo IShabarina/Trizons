@@ -38,7 +38,7 @@ const License = () => {
           Работаем по всем нормативам — у нас есть лицензия МЧС, допуски СРО и СРО монтаж
         </p>
       </div>
-      <div className={`flex-1 flex justify-start items-center flex-col sm:flex-row m-3`}>
+      <div className={`flex-1 flex justify-start flex-col sm:flex-row m-3`}>
         {license.map((license, i) => (
           <motion.div
             key={license.id}
@@ -46,7 +46,7 @@ const License = () => {
             initial='hidden'
             animate='visible'
             custom={i}
-            className={`flex-1 flex justify-start items-center flex-row m-3 sm:w-full`}>
+            className={`flex-1 flex justify-start flex-row m-3 sm:w-full`}>
             <Button
               styles={"w-full"}
               text={license.title}

@@ -108,15 +108,15 @@ export const product = [
     img: poliklinnikaImg,
     video: poliklinnikaImg,
   },
-  {
-    id: "product-4",
-    content:
-      "Проведены работы по устройству систем вентиляции, кондиционирования, а также слаботочных систем, в том числе пожарной сигнализации, дымоудаления и оповещения.",
-    name: "Москва",
-    title: "Объект культурного наследия Кригскомиссариат на Космодамианской набережной",
-    img: komissariatImg,
-    video: komissariatVideo,
-  },
+  // {
+  //   id: "product-4",
+  //   content:
+  //     "Проведены работы по устройству систем вентиляции, кондиционирования, а также слаботочных систем, в том числе пожарной сигнализации, дымоудаления и оповещения.",
+  //   name: "Москва",
+  //   title: "Объект культурного наследия Кригскомиссариат на Космодамианской набережной",
+  //   img: komissariatImg,
+  //   video: komissariatVideo,
+  // },
 ];
 
 export const license = [
@@ -130,11 +130,11 @@ export const license = [
     title: "Допуск СРО монтаж",
     img: mchs,
   },
-  {
-    id: "licence-3",
-    title: "Допуск СРО проектирование",
-    img: sro,
-  },
+  // {
+  //   id: "licence-3",
+  //   title: "Допуск СРО проектирование",
+  //   img: sro,
+  // },
 ];
 
 export const manufacturers = [
@@ -174,10 +174,9 @@ export const manufacturers = [
     id: "manufacturer-9",
     logo: hikvision,
   },
-
 ];
 
-export const footerLinks = [
+export const footerLists = [
   // {
   //   title: "Useful Links",
   //   links: [
@@ -230,18 +229,18 @@ export const footerLinks = [
   // },
   {
     title: "Контакты",
-    links: [
+    items: [
       {
         name: "Адрес",
-        link: "https://www.hoobank.com/our-partner/",
+        details: "105118, город Москва, ш Энтузиастов, д. 34, помещ. 10п",
       },
       {
         name: "Телефон",
-        link: "https://www.hoobank.com/become-a-partner/",
+        details: "+7 981 551 49 04",
       },
       {
         name: "E-mail",
-        link: "https://www.hoobank.com/become-a-partner/",
+        details: "tz@trizons.ru",
       },
     ],
   },
