@@ -76,8 +76,25 @@
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 }
 
+.bg-product-card-gradient {
+  backdrop-filter: blur(10px);
+  background: linear-gradient(154deg, rgba(255, 255, 255, 0.5) 16.15%, rgba(109, 109, 109, 0.8) 57.81%, rgba(17, 16, 29, 0.8) 93.23%);
+}
+
+.bg-service {
+  background-image: url('/src/assets/servicesBG.svg');
+}
+
+.bg-trizons {
+  background-image: url('/src/assets/logoTZ.svg');
+}
+
 .box-shadow {
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.box-shadow-nav {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .sidebar {
@@ -107,21 +124,53 @@
   }
 }
 
-.feature-card:hover {
+.service-card {
+  outline: 2px solid #272727;
+}
+
+.service-card:hover,
+.quality-card:hover {
+  outline: none;
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 }
 
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
-.feedback-card {
-  background: transparent;
-}
-
-.feedback-card:hover {
+.quality-card {
+  outline: none;
   background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.product-card {
+  background: transparent;
+  background: var(--black-gradient);
+}
+
+.product-card:hover {
+  background: var(--black-gradient);
+}
+
+.manufacturers {
+  position: relative;
+  overflow: hidden;
+}
+
+.manufacturers-wraper {
+  display: flex;
+}
+
+.manufacturers-item {
+  flex-shrink: 0;
+  animation: manufacturers 5s linear infinite;
+}
+
+@keyframes manufacturers {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
 .blue__gradient {

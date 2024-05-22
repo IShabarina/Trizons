@@ -1,197 +1,271 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { send, shield, star, rubezh, bolid, sonar, rvi, hikvision, argusspector, interm, pozhtehtika, perco, shtemenkoVideo, shtemenkoImg, poliklinnikaImg, komissariatVideo, komissariatImg, mchs, sro } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Главная",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "services",
+    title: "Услуги",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "products",
+    title: "Объекты",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "license",
+    title: "Разрешения",
+  },
+  {
+    id: "contacts",
+    title: "Контакты",
   },
 ];
 
-export const features = [
+export const quality = [
   {
-    id: "feature-1",
+    id: "quality-1",
     icon: star,
-    title: "Rewards",
+    title: "Подготовка",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "рабочей зоны и оснастки для монтажа. Использование качественных материалов и оборудования",
   },
   {
-    id: "feature-2",
+    id: "quality-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Соблюдение",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "проектных решений и норм строительства",
   },
   {
-    id: "feature-3",
+    id: "quality-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Тестирование",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "систем после монтажа для выявления возможных проблем и дефектов",
   },
 ];
 
-export const feedback = [
+
+export const services = [
   {
-    id: "feedback-1",
+    id: "service-1",
+    icon: star,
+    title: "Электромонтаж",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+      "услуги монтажа и пусконаладки наружных и внутренних систем электроснабжения, систем электроосвещения, заземления  и  молниезащиты",
+    details:
+      ["монтаж наружного электроснабжения согласно проектной документации - кабельные линии 35-10-0,4 кВ, опоры наружного освещения, фасадное освещение, архитектурная подсветка, трансформаторные подстанции",
+        "монтаж внутреннего электроснабжения - групповых сетей электроснабжения и электроосвещения, конечного оборудования (выключателей, розеток, осветительных приборов), распределительных щитов"],
   },
   {
-    id: "feedback-2",
+    id: "service-2",
+    icon: shield,
+    title: "Слаботочные системы",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+      "монтаж и интеграция систем оповещения о пожаре, монтаж систем контроля доступа и систем видеонаблюдения",
+    details:
+      ["монтаж автоматической системы пожарной сигнализации (АПС), автоматической установки газового пожаротушения (АГПТ)",
+        "установка, настройка и проверка систем контроля доступа (СКУД), прокладка системы охранного телевидения (СОТ), монтаж охранной сигнализации (ОС)",
+        "прокладка структурированной кабельной системы СКС",],
   },
   {
-    id: "feedback-3",
+    id: "service-3",
+    icon: send,
+    title: "Вентиляция",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+      "монтаж, пусконаладочные работы вентиляционного оборудования, монтаж воздуховодов вентиляции (вентиляционных каналов)",
+    details: [],
   },
 ];
 
-export const stats = [
+export const product = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: "product-1",
+    content:
+      "Проведены работы по устройству систем вентиляции, кондиционирования, а также слаботочных систем, в том числе пожарной сигнализации, дымоудаления и оповещения.",
+    name: "Москва",
+    title: "Объект культурного наследия Кригскомиссариат на Космодамианской набережной",
+    img: komissariatImg,
+    video: komissariatVideo,
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: "product-2",
+    content:
+      "благоустройство новых корпусов учебного заведения",
+    name: "Краснодар",
+    title: "Краснодарское высшее военное училище имени генерала армии С.М.Штеменко",
+    img: shtemenkoImg,
+    video: shtemenkoVideo,
   },
   {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    id: "product-3",
+    content:
+      "Проведены работы по устройству систем вентиляции, кондиционирования, а также слаботочных систем, в том числе пожарной сигнализации, дымоудаления и оповещения.",
+    name: "Москва",
+    title: "Объект культурного наследия Кригскомиссариат на Космодамианской набережной",
+    img: poliklinnikaImg,
+    video: poliklinnikaImg,
   },
+  {
+    id: "product-4",
+    content:
+      "Проведены работы по устройству систем вентиляции, кондиционирования, а также слаботочных систем, в том числе пожарной сигнализации, дымоудаления и оповещения.",
+    name: "Москва",
+    title: "Объект культурного наследия Кригскомиссариат на Космодамианской набережной",
+    img: komissariatImg,
+    video: komissariatVideo,
+  },
+];
+
+export const license = [
+  {
+    id: "licence-1",
+    title: "Лицензия МЧС",
+    img: sro,
+  },
+  {
+    id: "licence-2",
+    title: "Допуск СРО монтаж",
+    img: mchs,
+  },
+  {
+    id: "licence-3",
+    title: "Допуск СРО проектирование",
+    img: sro,
+  },
+];
+
+export const manufacturers = [
+  {
+    id: "manufacturer-1",
+    logo: rubezh,
+  },
+  {
+    id: "manufacturer-2",
+    logo: bolid,
+  },
+  {
+    id: "manufacturer-3",
+    logo: sonar,
+  },
+  {
+    id: "manufacturer-4",
+    logo: rvi,
+  },
+  {
+    id: "manufacturer-5",
+    logo: argusspector,
+  },
+  {
+    id: "manufacturer-6",
+    logo: interm,
+  },
+  {
+    id: "manufacturer-7",
+    logo: pozhtehtika,
+  },
+  {
+    id: "manufacturer-8",
+    logo: perco,
+  },
+  {
+    id: "manufacturer-9",
+    logo: hikvision,
+  },
+
 ];
 
 export const footerLinks = [
+  // {
+  //   title: "Useful Links",
+  //   links: [
+  //     {
+  //       name: "Content",
+  //       link: "https://www.hoobank.com/content/",
+  //     },
+  //     {
+  //       name: "How it Works",
+  //       link: "https://www.hoobank.com/how-it-works/",
+  //     },
+  //     {
+  //       name: "Create",
+  //       link: "https://www.hoobank.com/create/",
+  //     },
+  //     {
+  //       name: "Explore",
+  //       link: "https://www.hoobank.com/explore/",
+  //     },
+  //     {
+  //       name: "Terms & Services",
+  //       link: "https://www.hoobank.com/terms-and-services/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Community",
+  //   links: [
+  //     {
+  //       name: "Help Center",
+  //       link: "https://www.hoobank.com/help-center/",
+  //     },
+  //     {
+  //       name: "Partners",
+  //       link: "https://www.hoobank.com/partners/",
+  //     },
+  //     {
+  //       name: "Suggestions",
+  //       link: "https://www.hoobank.com/suggestions/",
+  //     },
+  //     {
+  //       name: "Blog",
+  //       link: "https://www.hoobank.com/blog/",
+  //     },
+  //     {
+  //       name: "Newsletters",
+  //       link: "https://www.hoobank.com/newsletters/",
+  //     },
+  //   ],
+  // },
   {
-    title: "Useful Links",
+    title: "Контакты",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
+        name: "Адрес",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Телефон",
+        link: "https://www.hoobank.com/become-a-partner/",
+      },
+      {
+        name: "E-mail",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
   },
 ];
 
-export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
-];
+// export const socialMedia = [
+//   {
+//     id: "social-media-1",
+//     icon: instagram,
+//     link: "https://www.instagram.com/",
+//   },
+//   {
+//     id: "social-media-2",
+//     icon: facebook,
+//     link: "https://www.facebook.com/",
+//   },
+//   {
+//     id: "social-media-3",
+//     icon: twitter,
+//     link: "https://www.twitter.com/",
+//   },
+//   {
+//     id: "social-media-4",
+//     icon: linkedin,
+//     link: "https://www.linkedin.com/",
+//   },
+// ];
