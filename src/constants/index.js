@@ -1,4 +1,4 @@
-import { send, shield, star, rubezh, bolid, sonar, rvi, hikvision, argusspector, interm, pozhtehtika, perco, shtemenkoVideo, shtemenkoImg, poliklinnikaImg, komissariatVideo, komissariatImg, mchs, sro } from "../assets";
+import { send, shield, star, rubezh, bolid, sonar, rvi, hikvision, argusspector, interm, pozhtehtika, perco, shtemenkoVideo, shtemenkoImg, poliklinnikaImg, komissariatVideo, komissariatImg, mchs1, mchs2, sro1, sro2, sro3, sro4 } from "../assets";
 
 export const navLinks = [
   {
@@ -123,12 +123,12 @@ export const license = [
   {
     id: "licence-1",
     title: "Лицензия МЧС",
-    img: sro,
+    img: [mchs1, mchs2],
   },
   {
     id: "licence-2",
     title: "Допуск СРО монтаж",
-    img: mchs,
+    img: [sro1, sro2, sro3, sro4],
   },
   // {
   //   id: "licence-3",

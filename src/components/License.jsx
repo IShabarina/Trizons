@@ -4,6 +4,7 @@ import styles from '../style';
 import Button from './Button';
 import { useState } from 'react';
 import Modal from './Modal';
+import Slider from './Slider';
 
 const statsVar = {
   visible: i => ({
@@ -59,9 +60,10 @@ const License = () => {
           status={modalIsOpen}
           setStatus={closeModal}
         >
-          <div>
+          <Slider images={selectedLicense}/>
+          {/* <div>
             <img src={selectedLicense} alt="" />
-          </div>
+          </div> */}
         </Modal>
       )}
     </section >

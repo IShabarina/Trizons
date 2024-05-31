@@ -10,6 +10,7 @@ import License from "./License";
 import Contacts from "./Contacts";
 import Footer from "./Footer";
 import Modal from "./Modal";
+import Slider from "./Slider";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   Contacts,
   Footer,
   Modal,
+  Slider,
 };

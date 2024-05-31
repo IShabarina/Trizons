@@ -26,8 +26,12 @@ import komissariatImg from "./komissariatImg.png";
 import shtemenkoVideo from "./shtemenkoMini.mp4";
 import komissariatVideo from "./komissariatMini.mp4";
 import poliklinnikaImg from "./poliklinnikaImg.jpg";
-import mchs from "./MCHS1.jpg";
-import sro from "./SRO1.jpg";
+import mchs1 from "./MCHS1.jpg";
+import mchs2 from "./MCHS2.jpg";
+import sro1 from "./SRO1.jpg";
+import sro2 from "./SRO2.jpg";
+import sro3 from "./SRO3.jpg";
+import sro4 from "./SRO4.jpg";
 
 export {
   quotes,
@@ -57,6 +61,10 @@ export {
   shtemenkoImg,
   komissariatImg,
   poliklinnikaImg,
-  mchs,
-  sro,
+  mchs1,
+  mchs2,
+  sro1,
+  sro2,
+  sro3,
+  sro4,
 };
