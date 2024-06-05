@@ -28,8 +28,10 @@ const swipePower = (offset, velocity) => {
     return Math.abs(offset) * velocity;
 };
 
+// eslint-disable-next-line react/prop-types
 const Slider = ({ images }) => {
     const [[page, direction], setPage] = useState([0, 0]);
+    // eslint-disable-next-line react/prop-types
     const imageIndex = wrap(0, images.length, page);
     const paginate = (newDirection) => {
         setPage([page + newDirection, newDirection]);
@@ -48,7 +50,7 @@ const Slider = ({ images }) => {
                     exit="exit"
                     transition={{
                         x: { type: "spring", stiffness: 300, damping: 30 },
-                        opacity: { duration: 0.2 }
+                        opacity: { duration: 0.1 }
                     }}
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}

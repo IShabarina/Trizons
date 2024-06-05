@@ -11,7 +11,7 @@ const Footer = () => (
       </div>
 
       <div className="flex-[1.5] w-full flex flex-row ss:justify-end flex-wrap ss:mt-0 mt-10">
-        {footerLists.map((footerList) => (
+        {/* {footerLists.map((footerList) => (
           <div key={footerList.key} className="flex flex-col ss:my-0 my-4 min-w-[150px]">
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
               {footerList.title}
@@ -24,7 +24,16 @@ const Footer = () => (
               ))}
             </ul>
           </div>
-        ))}
+        ))} */}
+        <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
+          <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white"> Контакты </h4>
+          <ul className="list-none mt-4">
+            <li className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4 mb-0">
+              <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4 "></p>
+              <p></p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
