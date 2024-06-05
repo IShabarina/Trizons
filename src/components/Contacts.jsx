@@ -1,4 +1,5 @@
 import styles from "../style";
+import { whatsapp } from "../assets";
 import Button from "./Button";
 
 const Contacts = () => (
@@ -11,7 +12,9 @@ const Contacts = () => (
     </div>
     <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
       {/* <Button text='Связаться с нами в WhatsApp' /> */}
-      <a className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none ${styles} rounded-[10px]`} href="https://wa.me/79296800530">Связаться с нами в WhatsApp </a>
+      <a className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none ${styles} rounded-[10px]`} href="https://wa.me/79296800530">Связаться в WhatsApp
+        <img src={whatsapp} alt="icon" className="w-[24px] h-[24px]" />
+      </a>
     </div>
   </section>
 )

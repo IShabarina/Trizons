@@ -32,6 +32,7 @@ import sro1 from "./SRO1.jpg";
 import sro2 from "./SRO2.jpg";
 import sro3 from "./SRO3.jpg";
 import sro4 from "./SRO4.jpg";
+import whatsapp from "./whatsApp.svg";
 
 export {
   quotes,
@@ -67,4 +68,5 @@ export {
   sro2,
   sro3,
   sro4,
+  whatsapp,
 };
