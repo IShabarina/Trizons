@@ -39,7 +39,7 @@ const Slider = ({ images }) => {
 
     return (
         <>
-            <AnimatePresence initial={false} custom={direction}>
+            <AnimatePresence mode='wait' initial={false} custom={direction}>
                 <motion.img
                     key={page}
                     src={images[imageIndex]}

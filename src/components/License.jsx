@@ -60,10 +60,7 @@ const License = () => {
           status={modalIsOpen}
           setStatus={closeModal}
         >
-          <Slider images={selectedLicense}/>
-          {/* <div>
-            <img src={selectedLicense} alt="" />
-          </div> */}
+          <Slider images={selectedLicense} />
         </Modal>
       )}
     </section >
