@@ -1,12 +1,12 @@
 import styles from "../style";
 import { logoTZ } from '../assets';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-import { footerLists } from "../constants";
+// import { footerLists } from "../constants";
 
 const Footer = () => {
   const defaultState = {
-    center: [55.751574, 37.573856],
-    zoom: 9,
+    center: [55.754132068972545, 37.73506299999994],
+    zoom: 14,
   };
 
   return (
@@ -18,10 +18,25 @@ const Footer = () => {
         </div>
 
 
-        <div>
-          <YMaps>
-            <Map defaultState={defaultState}>
-              <Placemark geometry={[55.684758, 37.738521]} />
+        <div className="sm:w-[30%] sm:h-[190px] w-full h-[190px] rounded-[20px] sm:mr-10 mr-0 bg-white" id="map">
+          <YMaps >
+            <Map
+              defaultState={defaultState}
+              width="100%"
+            // height="190px"
+            // className="map"
+            >
+              <Placemark
+                geometry={[55.754132068972545, 37.73506299999994]}
+                options={
+                  {
+                    iconLayout: "default#image",
+                    iconImageHref: logoTZ,
+                    iconImageSize: [20, 20],
+                    iconImageOffset: [0, 0],
+                  }
+                }
+              />
             </Map>
           </YMaps>
         </div>
@@ -74,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
     </section >
-  )
-}
+  );
+};
 
 export default Footer
