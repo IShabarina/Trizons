@@ -28,14 +28,18 @@ const Products = () => {
 
       <motion.div
         ref={carousel}
-        whileTap={{cursor: "grabbing"}}
+        whileTap={{ cursor: "grabbing" }}
         className="carousel flex w-full h-[620px] py-3 relative z-[1] cursor-grab overflow-hidden">
         <motion.div
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
           className="inner-carousel flex h-full">
           {product.map((card) => (
-            <MProductCard key={card.id} {...card} />
+            <MProductCard
+              whileTap={{ scale: 0.8 }}
+              whileDrag={{ scale: 0.8 }}
+              // transition={{ duration: 0.3 }}
+              key={card.id} {...card} />
           ))}
         </motion.div>
       </motion.div>

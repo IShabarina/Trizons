@@ -11,6 +11,7 @@ import Contacts from "./Contacts";
 import Footer from "./Footer";
 import Modal from "./Modal";
 import Slider from "./Slider";
+import Link from "./Link";
 
 export {
   Header,
@@ -26,4 +27,5 @@ export {
   Footer,
   Modal,
   Slider,
+  Link,
 };

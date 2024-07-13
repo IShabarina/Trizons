@@ -8,6 +8,7 @@ import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
 import discount from "./Discount.svg";
 import logoTZ from "./logoTZ.svg";
+import logoTZcolor from "./logoTZcolor.svg";
 import logoTZletter from "./logoTZletter.svg";
 import robotTZ from "./robotTZ.png";
 import billTZ from "./billTZ.png";
@@ -44,6 +45,7 @@ export {
   arrowUp,
   discount,
   logoTZ,
+  logoTZcolor,
   logoTZletter,
   robotTZ,
   billTZ,

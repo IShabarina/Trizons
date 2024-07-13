@@ -18,7 +18,7 @@ const Confidence = () => (
   <motion.section
     initial="hidden"
     whileInView="visible"
-    viewport={{ amount: 0.3 }}
+    viewport={{ amount: 0.3, once: true }}
     id="confidence"
     className={layout.sectionReverse}>
     <motion.div className={layout.sectionImgReverse}>
@@ -30,11 +30,6 @@ const Confidence = () => (
     <motion.div custom={2} variants={confidenceAnimation} className={layout.sectionInfo}>
       <motion.h2 className={styles.heading2}>С нами надежно, <br className="sm:block hidden" /> а значит комфортно</motion.h2>
       <motion.p className={`${styles.paragraph} max-w-[470px] mt-5`}>Нам доверяют свои проекты повторно, обращаются впервые и приходят по рекомендации. </motion.p>
-
-      {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <img src={apple} alt="apple_store" className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer" />
-        <img src={google} alt="google_play" className="w-[128px] h-[42px] object-contain cursor-pointer" />
-      </div> */}
     </motion.div>
   </motion.section>
 )

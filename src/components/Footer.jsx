@@ -1,5 +1,5 @@
 import styles from "../style";
-import { logoTZ } from '../assets';
+import { logoTZ, logoTZcolor } from '../assets';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 // import { footerLists } from "../constants";
 
@@ -12,26 +12,25 @@ const Footer = () => {
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`flex justify-between sm:flex-row flex-col mb-8 w-full`}>
-        <div className="flex-1 flex flex-col justify-start mr-10">
-          <img src={logoTZ} alt="trizons" className="w-[100px] object-contain mb-2" />
-          <p className={`${styles.paragraph} mt4 max-w-[310px]`}> Выполняем поставленные задачи. Оправдываем доверие наших заказчиков.</p>
+        <div className="flex-1 flex sm:flex-col flex-row justify-start sm:mr-10 mb-2">
+          <img src={logoTZ} alt="trizons" className="w-[100px] object-contain mb-2 sm:mr-16 mr-4" />
+          <p className={`${styles.paragraph} max-w-[310px]`}> Выполняем поставленные задачи. Оправдываем доверие наших заказчиков.</p>
         </div>
 
 
-        <div className="sm:w-[30%] sm:h-[190px] w-full h-[190px] rounded-[20px] sm:mr-10 mr-0 bg-white" id="map">
+        <div id="map" className="map bg-slate-500 sm:w-[30%] sm:h-[190px] w-full h-[190px] rounded-[20px] sm:mr-10 mr-0 sm:mb-10 bg-white">
           <YMaps >
             <Map
               defaultState={defaultState}
               width="100%"
-            // height="190px"
-            // className="map"
+              height="190px"
             >
               <Placemark
                 geometry={[55.754132068972545, 37.73506299999994]}
                 options={
                   {
                     iconLayout: "default#image",
-                    iconImageHref: logoTZ,
+                    iconImageHref: logoTZcolor,
                     iconImageSize: [20, 20],
                     iconImageOffset: [0, 0],
                   }
@@ -41,7 +40,7 @@ const Footer = () => {
           </YMaps>
         </div>
 
-        <div className="flex-[1.5] w-full flex flex-row ss:justify-end flex-wrap ss:mt-0 mt-10">
+        <div className="flex-[1.5] w-full flex flex-row justify-start sm:justify-end flex-wrap ss:mt-0 mt-10">
           {/* {footerLists.map((footerList) => (
           <div key={footerList.key} className="flex flex-col ss:my-0 my-4 min-w-[150px]">
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">

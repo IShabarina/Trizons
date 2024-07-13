@@ -1,4 +1,4 @@
-import styles from "../style";
+import styles, { layout } from "../style";
 import { shield, robotTZ } from "../assets";
 import GoOurServices from './GoOurServices';
 import { motion } from "framer-motion";
@@ -32,7 +32,7 @@ const Hero = () => (
     initial="hidden"
     whileInView="visible"
     id="home"
-    className={`flex md:flex-row flex-col py-16`}
+    className={`${layout.section}`}
   >
     <motion.div custom={1} variants={textAnimation} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px]  mb-2">

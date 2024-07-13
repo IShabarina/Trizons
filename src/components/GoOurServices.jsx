@@ -4,6 +4,7 @@ import { arrowUp } from "../assets";
 
 const GoOurServices = () => (
   <motion.div
+    whileTap={{ scale: [null, 1.2, 1.1] }}
     whileHover={{ scale: [null, 1.2, 1.1] }}
     transition={{ duration: 0.3 }}
     className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}>

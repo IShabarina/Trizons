@@ -3,7 +3,6 @@ import { forwardRef } from "react";
 
 import { quality } from "../constants";
 import styles, { layout } from "../style";
-// import Button from './Button';
 
 const textAnimation = {
   hidden: {
@@ -59,7 +58,6 @@ const Quality = () => {
       <div className={layout.sectionInfo}>
         <motion.h2 custom={1} variants={textAnimation} className={styles.heading2}>Качественное исполнение<br className="sm:block hidden" /> инженерных систем</motion.h2>
         <motion.p custom={2} variants={textAnimation} className={`${styles.paragraph} max-w-[470px] mt-5`}>От качества выполняемых нами работ зависят работоспособность и безопасность здания, поэтому процесс всегда сопровождается соблюдением ряда требований (ГОСТ, СП, ПУЭ)</motion.p>
-        {/* <Button styles="mt-10" /> */}
       </div>
 
       <motion.div
