@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { services } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
+import Link from "./Link";
 import { MServiceCard } from "./ServiceCard";
 
 const servicesAnimation = {
@@ -29,7 +29,7 @@ const Services = () => (
       className={layout.sectionInfo}>
       <h2 className={styles.heading2}>Основные виды работ, <br className="sm:block hidden" />  на которых мы специализируемся</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Выполняем монтаж и ремонт существующих инженерных коммуникаций привлекая наших постоянных опытных сотрудников, готовых решить любую сложную задачу и используя современное технологическое оборудование и инструменты</p>
-      <Button styles="mt-10" text="Связаться с нами" />
+      <Link styles={"mt-10"} href={"https://wa.me/79296800530"} text={"Связаться с нами"} />
     </motion.div>
 
     <motion.div

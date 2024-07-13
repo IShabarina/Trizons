@@ -1,7 +1,6 @@
 import styles from "../style";
 import { logoTZ, logoTZcolor } from '../assets';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-// import { footerLists } from "../constants";
 
 const Footer = () => {
   const defaultState = {
@@ -18,7 +17,7 @@ const Footer = () => {
         </div>
 
 
-        <div id="map" className="map bg-slate-500 sm:w-[30%] sm:h-[190px] w-full h-[190px] rounded-[20px] sm:mr-10 mr-0 sm:mb-10 bg-white">
+        <div id="map" className="map bg-slate-500 sm:w-[30%] sm:h-[190px] w-full h-[190px] rounded-[20px] sm:mr-10 mr-0 sm:mb-10">
           <YMaps >
             <Map
               defaultState={defaultState}
@@ -31,7 +30,7 @@ const Footer = () => {
                   {
                     iconLayout: "default#image",
                     iconImageHref: logoTZcolor,
-                    iconImageSize: [20, 20],
+                    iconImageSize: [30, 30],
                     iconImageOffset: [0, 0],
                   }
                 }
@@ -41,20 +40,6 @@ const Footer = () => {
         </div>
 
         <div className="flex-[1.5] w-full flex flex-row justify-start sm:justify-end flex-wrap ss:mt-0 mt-10">
-          {/* {footerLists.map((footerList) => (
-          <div key={footerList.key} className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-            <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-              {footerList.title}
-            </h4>
-            <ul className="list-none mt-4">
-              {footerList.items.map((details, index) => (
-                <li key={details.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerList.items.length - 1 ? 'mb-4' : 'mb-0'}`}>
-                  {details.name} {details.details}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))} */}
           <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white"> Контакты </h4>
             <ul className="list-none mt-4">
@@ -82,9 +67,6 @@ const Footer = () => {
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
         <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">2024. TRIZONS.</p>
         <div className="flex flex-row md:mt-0 mt-6">
-          {/* {socialMedia.map((social, index) => (
-          <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`} />
-        ))} */}
         </div>
       </div>
     </section >

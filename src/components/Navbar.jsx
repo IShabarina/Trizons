@@ -8,7 +8,6 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-3 justify-between items-center navbar relative">
-      {/* <img src={logoTZ} alt='trizons' className="w-[124px] h-[32px]" /> */}
       <ul className='list-none md:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li
