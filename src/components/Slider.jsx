@@ -23,10 +23,10 @@ const variants = {
         };
     }
 };
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset, velocity) => {
-    return Math.abs(offset) * velocity;
-};
+// const swipeConfidenceThreshold = 10000;
+// const swipePower = (offset, velocity) => {
+//     return Math.abs(offset) * velocity;
+// };
 
 // eslint-disable-next-line react/prop-types
 const Slider = ({ images }) => {
@@ -55,15 +55,13 @@ const Slider = ({ images }) => {
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
                     dragElastic={1}
-                    onDragEnd={(e, { offset, velocity }) => {
-                        const swipe = swipePower(offset.x, velocity.x);
-
-                        if (swipe < -swipeConfidenceThreshold) {
-                            paginate(1);
-                        } else if (swipe > swipeConfidenceThreshold) {
-                            paginate(-1);
-                        }
-                    }}
+                    oonDragEnd={(e, { offset, velocity }) => {
+    if (offset.x < -50 || velocity.x < -500) {
+        paginate(1);
+    } else if (offset.x > 50 || velocity.x > 500) {
+        paginate(-1);
+    }
+}}
                 />
             </AnimatePresence>
             <div className="next" onClick={() => paginate(1)}>
