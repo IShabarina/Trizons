@@ -9,9 +9,33 @@ const Products = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
+  // useEffect(() => {
+  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  // }, []);
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+  const updateWidth = () => {
+    if (carousel.current) {
+      setWidth(
+        carousel.current.scrollWidth - carousel.current.offsetWidth
+      );
+    }
+  };
+
+  updateWidth();
+
+  const resizeObserver = new ResizeObserver(updateWidth);
+
+  if (carousel.current) {
+    resizeObserver.observe(carousel.current);
+  }
+
+  window.addEventListener("resize", updateWidth);
+
+  return () => {
+    resizeObserver.disconnect();
+    window.removeEventListener("resize", updateWidth);
+  };
+}, []);
 
   return (
     <section id="products" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
